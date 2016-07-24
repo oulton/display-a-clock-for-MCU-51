@@ -2,7 +2,7 @@
 #define uint unsigned int
 #define uchar unsigned char
 uchar sshi,sge,fshi,fge,mshi,mge;
-uchar num=0,snum=23,fnum=59,mnum=40;
+uchar num=0,snum=0,fnum=0,mnum=0;
 sbit dula=P2^6;
 sbit wela=P2^7;
 uchar code table[]={0x3f,0x06,0x5b,0x4f,
@@ -29,74 +29,74 @@ void main()
 }
 void display(uchar sshi,uchar sge,uchar fshi,uchar fge,uchar mshi,uchar mge)
 {
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=table[sshi];
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[1];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=table[sge];
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[2];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=0x40;
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[3];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=table[fshi];
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[4];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=table[fge];
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[5];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=0x40;
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[6];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=table[mshi];
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[7];
 	wela=0;
 	delay(2);
 
-	dula=1;	   //送入段选
+	dula=1;	   //脣脥脠毛露脦脩隆
 	P0=table[mge];
 	dula=0;
 	P0=0xff; 
-	wela=1;    //送入位选
+	wela=1;    //脣脥脠毛脦禄脩隆
 	P0=tablewela[8];
 	wela=0;
 	delay(2);
